@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 and Responsive Jquery Audio Player - Sticky and Inline versions. Download Free Jquery Plugin.">
+  <meta name="keywords" content="sticky jquery audio plugin, jquery audio player, jquery audio player for free, free jquery audio player, download jquery player plugin, music player jquery, audio player html5, html5 audio player github">
+  <meta name="author" content="Tiendasdigitales">
+
+  <title>RAGASIAM RADIO</title>
+	<meta property="og:image" content="https://2.bp.blogspot.com/-VY592THi93Y/Ws668Ha961I/AAAAAAAAASs/Aym2SFNIdBI3lkAMOit5iBpSW1JnFN11gCLcBGAs/s1600/2.png">
+	<meta property="og:title" content="Ragasiam Radio">
+	<meta property="og:description" content="இசை மழையில் நனைந்திட இணைந்திருங்கள் ரகசியம் ரேடியோவுடன்...">
+  <meta property="og:site_name" content="ragasiam.com">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-111822757-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <link rel="stylesheet" href="css/stickyaudioplayerjquery.min.css">
+  <script src="js/stickyaudioplayerjquery.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+    table
+    {
+      padding: ;
+      background: #eee;
+      display: inline-block;
+      display: table-cell;
+      width: 80%;
+    }
+    table td, table th
+    {
+      padding: 10px;
+    }
+    .pluginDownload
+    {
+      padding:10px;
+      background:#f6f6f6;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      width:170px;
+      height: auto;
+      overflow: hidden;
+    }
+    .pluginDownload a,.pluginDownload span
+    {
+      display: inline-block;
+      float: left;
+    }
+    .pluginDownload a
+    {
+      color:#555;
+      text-shadow: 1px 1px 1px #fff;
+    }
+    .pluginDownload span
+    {
+      margin: 5px;
+      padding-top: 0px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>
+        <a href="http://www.ragasiam.com/">
+          <img src="https://2.bp.blogspot.com/-VY592THi93Y/Ws668Ha961I/AAAAAAAAASs/Aym2SFNIdBI3lkAMOit5iBpSW1JnFN11gCLcBGAs/s1600/2.png" class="img-responsive" alt="tiendas digitales"/>
+        </a>
+      </h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="http://www.ragasiam.com/">Home</a></li>
+        <li class="active"><a href="#">More Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-9">
+      <h2>இசை மழையில் நனைந்திட இணைந்திருங்கள் ரகசியம் ரேடியோவுடன்...</h2>
+      <p>
+        <div class="pluginDownload"><a href="stickyaudioplayerjquery.zip"><span>Download Plugin</span> <input class="primary-button" type="image" src="images/download.png" /></a></div>
+        
+        <div class="inline-player"></div>
+        
+      
+        
+
+
+<script>
+var inline, run;
+$(document).ready(function()
+ {
+  run = $('body').stickyAudioPlayer(
+   {
+     url:       'http://109.74.196.48:8251/stream',
+     position:  'bottom', //'bottom'|'top'|'inline'
+     text:      'Bensound - Going Higher - Music: http://www.ragasiam.com',
+     image:     'https://2.bp.blogspot.com/-uEuM323-pak/Ws6_-PFlVQI/AAAAAAAAAS8/9mjd5Q_jn2wnPaVLJA2qndA9HhUOxANQACLcBGAs/s1600/Logo.jpg',
+     volume:    80,
+     repeat:    true,
+    }
+  );
+
+  inline = $('.inline-player').stickyAudioPlayer(
+   {
+     url:       'http://109.74.196.48:8251/stream',
+     position:  'inline',
+     text:      'Bensound - Happiness - Music: http://www.ragasiam.com',
+     image:     'https://2.bp.blogspot.com/-uEuM323-pak/Ws6_-PFlVQI/AAAAAAAAAS8/9mjd5Q_jn2wnPaVLJA2qndA9HhUOxANQACLcBGAs/s1600/Logo.jpg',
+     download:  'http://www.google.com', //download link
+     volume:    90,
+     image:     'images/cover.png',
+     theme:     'compact',
+     repeat:    true,
+    }
+  );
+
+  /*setTimeout(function(){run.hide();},3000);
+  setTimeout(function(){run.show();},5000);
+  setTimeout(function(){run.setVolume(20);},7000);
+  setTimeout(function(){run.remove();},9000);*/
+});
+</script>
+</body>
+</html>
